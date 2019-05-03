@@ -24,4 +24,6 @@ class WordViewModel(application: Application) : AndroidViewModel(application) {
     fun insert(word: Word) = GlobalScope.launch(Dispatchers.IO) {
         repository.insert(word)
     }
+
+        //
 }
